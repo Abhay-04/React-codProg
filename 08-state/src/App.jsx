@@ -1,6 +1,7 @@
 import React from 'react'
 // import SimpleStateExample from './SimpleStateExample.jsx'
-import Counter from './Counter'
+// import Counter from './Counter'
+import StateArrayExample from './StateArrayExample'
 
 
 
@@ -9,7 +10,8 @@ import Counter from './Counter'
 function App() {
   return (
     // <SimpleStateExample />
-    <Counter />
+    // <Counter />
+    <StateArrayExample />
 
 
    
