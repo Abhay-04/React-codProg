@@ -1,15 +1,17 @@
 import React from 'react'
+// import SimpleStateExample from './SimpleStateExample.jsx'
 import Counter from './Counter'
 
-// import SimpleStateExample from './SimpleStateExample.jsx'
+
 
 
 
 function App() {
   return (
     // <SimpleStateExample />
-
     <Counter />
+
+
    
     
   )
