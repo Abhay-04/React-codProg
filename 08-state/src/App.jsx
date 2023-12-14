@@ -1,24 +1,18 @@
-import { useState } from "react";
+import React from 'react'
+import Counter from './Counter'
+
+// import SimpleStateExample from './SimpleStateExample.jsx'
+
+
 
 function App() {
-   const [firstName , setFirstName]  = useState("Abhay")
-
-  function changeFirstName(){
-    console.log("component rendered");
-    if (firstName === "Abhay"){
-      setFirstName("Rohan")
-    }  else {
-      setFirstName("Abhay")
-    } 
-    
-    
-  }
   return (
-    <>
-      <h1>{firstName}</h1>
-      <button onClick={changeFirstName}>Change Name</button>
-    </>
-  );
+    // <SimpleStateExample />
+
+    <Counter />
+   
+    
+  )
 }
 
-export default App;
+export default App
