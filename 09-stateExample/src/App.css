@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.user{
+    margin: 1rem;
+    padding: 1rem 10rem;
+    background-color: #c05b5b;
+    color: #efefef;
+    text-align: center;
+}
