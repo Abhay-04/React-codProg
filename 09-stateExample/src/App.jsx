@@ -11,9 +11,41 @@ function App() {
     
   ]);
 
+  function increaseAge(id){
+    // console.log("Increase Age Called")
+    // console.log(id);
+
+    setUsers((prevState)=>{
+      return prevState.map((user)=>{
+        if (user.id === id){
+          return {...user , age: user.age + 1}
+        }else{
+          return user
+        }
+
+      })
+    })
+  }
+
+  const deleteUser = (id) => { 
+    // console.log(id , "delete user")
+
+    // setUsers(prevState =>{
+    //   return prevState.filter((user)=>{
+    //     return user.id !== id
+    //   })
+    // })
+
+    //implicit function
+
+   setUsers(prevState => prevState.filter(user => user.id !== id)) 
+
+  }
+
   return (
     <>
-      <Users users={users} />
+      <h3 className="heading">State Examples</h3>
+      <Users users={users} increaseAge = {increaseAge} deleteUser = {deleteUser} />
     </>
   );
 }
