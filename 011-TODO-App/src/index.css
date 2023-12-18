@@ -10,6 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #2c3e50;
   color: #efefef;
+  
 }
 
 button,
@@ -20,7 +21,7 @@ input {
 
 .container {
   max-width: 900px;
-  width: 95%;
+  width: 90%;
   margin: auto;
 }
 
@@ -38,6 +39,7 @@ input {
   background-color: #fff;
   border-radius: 8px;
   padding: 0px 1rem;
+  
 }
 
 .todoForm__input {
@@ -67,6 +69,9 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  
+  
 }
 
 .todo__title {
@@ -74,15 +79,22 @@ input {
   display: flex;
   align-items: center;
   gap: 1rem;
+  
+  
+  
 }
 
 .todo__title p {
+  
   font-size: 1.2rem;
+  word-break: break-all;
+  
+  
 }
 
 input[type="checkbox"] {
-  height: 32px;
-  width: 32px;
+  min-height: 32px;
+  min-width: 32px;
   accent-color: #fff;
 }
 
