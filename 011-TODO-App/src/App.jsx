@@ -1,6 +1,8 @@
 import { useState } from "react";
 import TodoForm from "./TodoForm";
 import Todos from "./Todos";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -29,15 +31,16 @@ function App() {
     });
   }
   return (
-    <>
-      <h1>TODO LIST</h1>
+    <div className="container">
+      <ToastContainer />
+      <h1 className="main__title">Todo List</h1>
       <TodoForm addTodo={addTodo} />
       <Todos
         todos={todos}
         toggleCompleted={toggleCompleted}
         removeTodo={removeTodo}
       />
-    </>
+    </div>
   );
 }
 

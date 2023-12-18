@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
+import {toast} from "react-toastify"
 
 function TodoForm({ addTodo }) {
   const [title, setTitle] = useState("");
   function handleSumbit(e) {
     e.preventDefault();
     if (title.trim().length === 0) {
-      alert("Please Fill Input ");
+      toast.error("Please Fill Input!" , {
+        autoClose: 2000,
+      })
       return;
     }
 
@@ -22,13 +25,14 @@ function TodoForm({ addTodo }) {
   }
 
   return (
-    <form onSubmit={handleSumbit}>
-      <input
+    <form onSubmit={handleSumbit} className="todoForm">
+      <input className="todoForm__input"
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      <button type="submit">Add</button>
+      <button className="todoForm__btn" 
+       type="submit">Add</button>
     </form>
   );
 }
