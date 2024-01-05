@@ -1,11 +1,13 @@
 import ExampleUseEffect from "./ExampleUseEffect"
+import FetchDataExample from "./FetchDataExample"
 
 function App() {
   
 
   return (
     <>
-    <ExampleUseEffect />
+    {/* <ExampleUseEffect /> */}
+    <FetchDataExample />
     </>
   )
 }
